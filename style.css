@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: rgba(78, 78, 236, 0.603);
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: grid;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 62vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 1.5em;
+    grid-template-areas: 
+    "label data click"
+    "foto foto foto"
+    ;
+    grid-template-columns: 15% 60% 20%;
+    padding-top: 5vh;
+}
+input{
+    height: 5vh;
+    margin-left: 2vh;
+}
+p{
+    text-align: left;
+    border: 1px solid black;
+}
+p:hover{
+    background-color: aquamarine;
+}
+#foto{
+    width: 30vw;
+    height: 49vh;
+    background-size: cover;
+    background-image: url();
+    grid-area: foto;
+    margin-left: 1vh;
+    border: 2px solid black;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item{
+    opacity: 0;
+}
+#idate{
+    grid-area: data;
+}
+#click{
+    grid-area: click;
+}
+#label{
+    grid-area: label;
+}
